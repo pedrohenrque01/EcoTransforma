@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte padrão */
+  body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+    color: #1c1c1c;
+    background-color: #FFFFFF;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: #0E7049;
+    font-size: 1.3rem;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    background-color: #0E7049;
+    color: white;
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+  }
+  
+
+  nav ul li a:hover {
+    background-color: #cae7dc;
+    color: #114D35; /* cor ao passar o mouse */
+    transform: scale(1.05); /* leve efeito de crescimento */
+  }
+  
+  .card {
+    background-color: #0E7049;
+    color: white;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .card h1 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .content {
+    display: flex;
+    gap: 1rem;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #333;
+  }
+  
+  .content img {
+    max-width: 150px;
+    border-radius: 5px;
+  }
+  
+  .descricao {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .info-extra {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #333;
+    font-size: 0.95rem;
+  }
+  
+  /* Seção principal (hero) */
+  .hero {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: transparent; /* Não pinta a tela toda */
+  }
+  
+  /* Este é o bloco verde contido */
+  .hero-box {
+    background-color: #14532d;
+    color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    max-width: 960px;
+    width: 100%;
+  }
+  
+  .hero-box img {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .hero-text {
+    max-width: 350px;
+    text-align: left;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .tag {
+    background-color: #114D35;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .button {
+    background-color: white;
+    color: #14532d;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .button:hover{
+    background-color: #cae7dc;
+    color: #114D35;
+    transform: scale(1.05);
+  }
+  
+  /* Seção de conteúdo */
+  .content {
+    background: repeating-linear-gradient(
+      45deg,
+      #ffffff,
+    );
+    padding: 3rem 2rem;
+    text-align: justify;
+    display: none;
+  }
+  .content:target{
+    display: block;
+  }
+  
+  .content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #14532d;
+  }
+  
+  .content p {
+    max-width: 600px;
+    color: black;
+  }
+  
+  .content img {
+    float: right;
+    width: 230px;
+    margin-left: 2rem;
+    border-radius: 10px;
+  }
+  
+  /* Botão voltar ao topo */
+  .back-button {
+    background-color: #14532d;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  .back-button:hover {
+    background-color: #cae7dc;
+    color: #114D35;
+    transform: scale(1.05);
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero img {
+      margin-bottom: 1.5rem;
+    }
+  
+    .content img {
+      float: none;
+      display: block;
+      margin: 1.5rem auto;
+    }
+  
+    .content p {
+      text-align: justify;
+    }
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    color: black;
+
+  }
+  .hero-content {
+    background-color: #0E7049;
+    padding: 3.5rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  #fumaca{
+  border-radius: 12px;
+  max-width: 960px;
+  transform:translateX(-30px);
+  height: 250px;
+  }
+  #agua{
+    border-radius: 15px;
+    max-width: 960px;
+    transform: translateX(-25px);
+    height: 300px;
+  }
+  #imglegislacao{
+   height: 300px;
+   max-width: 400px;
+  }
+  #descarte{
+    max-width: 240px;
+  }
+  #reciclagem{
+    max-width: 300px;
+  }
+  #turma{
+    border-radius: 15px;
+    max-width: 400px;
+    height: 300px;
+  }
+  #turma2{
+    max-width: 960px;
+  }
+  #mapa{
+    background-color: #0E7049;
+    color: white;
+    max-width: 300px;
+  }

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+  }
+  
+  header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #0E7049;
+    font-weight: bold;
+  }
+  
+  nav ul li a {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color:#0E7049;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #21a570;
+  }
+  nav ul li a:hover {
+    background-color: #CEFFEB;
+    color: #41c08d; /* cor ao passar o mouse */
+    transform: scale(1.05); /* leve efeito de crescimento */
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .card {
+    background-color: #0E7049;
+    color: white;
+    border-radius: 16px;
+    max-width: 700px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  .card h1 {
+    font-size: 2em;
+    margin-bottom: 25px;
+  }
+  
+  .imagem-centro img {
+    max-width: 250px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .frase-impacto {
+    font-size: 1.2em;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #f1f1f1;
+    background-color: #14532d;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .btn-area {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #4b2401;
+  }
+  
